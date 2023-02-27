@@ -14,10 +14,10 @@ export default function Hero({ greeting, name, intro }) {
             <h2>{intro}</h2>
             <div className="hero-btn">
               <Link href="#!" class="btn" role="button">
-                See my skills
+                Projects
               </Link>
-              <Link href="#!" class="btn" role="button">
-                My Resume
+              <Link href="#!" class="btn bold" role="button">
+                Resume
               </Link>
             </div>
           </div>

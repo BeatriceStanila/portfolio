@@ -1,9 +1,22 @@
 import Head from "next/head";
-// import styles from "@/styles/Home.module.css";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 import Hero from "@/components/Hero/Hero";
+import Projects from "@/components/Projects/Projects";
 
 export default function Home() {
+  const [projectData, setProjectData] = useState([]);
+
+  const dataURL = "http://localhost:4000/";
+
+  useEffect(() => {
+    axios.get(dataURL).then((response) => {
+      console.log(response.data);
+      setProjectData(response.data);
+    });
+  }, []);
+  console.log(projectData);
   return (
     <>
       <Head>
@@ -18,6 +31,18 @@ export default function Home() {
           name="Beatrice Stanila"
           intro="A software developer excited to  build technologies solutions to problems."
         />
+
+        {projectData.map((el) => {
+          return (
+            <Projects
+              title={el.title}
+              description={el.description}
+              demo={el.demo}
+              repo={el.repo}
+              key={el._id}
+            />
+          );
+        })}
       </main>
     </>
   );

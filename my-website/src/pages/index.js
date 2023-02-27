@@ -1,6 +1,7 @@
 import Head from "next/head";
-import styles from "@/styles/Home.module.css";
-import Navbar from "@/components/Navbar/Navbar";
+// import styles from "@/styles/Home.module.css";
+
+import Hero from "@/components/Hero/Hero";
 
 export default function Home() {
   return (
@@ -11,9 +12,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <Navbar />
-        <p>hi</p>
+      <main className="main">
+        <Hero
+          greeting="Hi there! My name is .."
+          name="Beatrice Stanila"
+          intro="A software developer excited to  build technologies solutions to problems."
+        />
       </main>
     </>
   );

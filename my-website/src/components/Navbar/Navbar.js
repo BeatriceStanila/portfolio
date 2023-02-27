@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import MobileMenu from "./MobileMenu";
+
+import MobileMenu from "./MobileMenu/MobileMenu";
 import { useState, useEffect } from "react";
 
 function Navbar() {

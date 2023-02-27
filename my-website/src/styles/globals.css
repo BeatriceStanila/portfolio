@@ -122,3 +122,36 @@ ul {
   color: #ffffff80;
   transform: translateY(-3px);
 }
+
+.mobile-icons {
+  font-size: 28px;
+  line-height: 1.3em;
+}
+
+/* NAVBAR MEDIA QUERY */
+@media screen and (max-width: 640px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-icons {
+    display: block;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-flow: column wrap;
+    align-self: center;
+    gap: 25px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .mobile-icons {
+    display: none;
+  }
+
+  .nav-menu-mobile {
+    display: none;
+  }
+}

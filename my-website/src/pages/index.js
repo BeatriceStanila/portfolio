@@ -1,22 +1,10 @@
 import Head from "next/head";
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { projectsData } from "../data/data";
 
 import Hero from "@/components/Hero/Hero";
 import Projects from "@/components/Projects/Projects";
 
 export default function Home() {
-  const [projectData, setProjectData] = useState([]);
-
-  const dataURL = "http://localhost:4000/";
-
-  useEffect(() => {
-    axios.get(dataURL).then((response) => {
-      console.log(response.data);
-      setProjectData(response.data);
-    });
-  }, []);
-  console.log(projectData);
   return (
     <>
       <Head>
@@ -32,17 +20,26 @@ export default function Home() {
           intro="A software developer excited to  build technologies solutions to problems."
         />
 
-        {projectData.map((el) => {
-          return (
-            <Projects
-              title={el.title}
-              description={el.description}
-              demo={el.demo}
-              repo={el.repo}
-              key={el._id}
-            />
-          );
-        })}
+        <div class="projects">
+          <div>
+            <h3>My projects</h3>
+            <div class="projects-wrapper">
+              {projectsData.map((data) => {
+                return (
+                  <Projects
+                    title={data.project_name}
+                    description={data.project_description}
+                    stack={data.stack_used}
+                    demo={data.demo_link}
+                    repo={data.repo_link}
+                    image={data.image}
+                    key={data.project_name}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
       </main>
     </>
   );

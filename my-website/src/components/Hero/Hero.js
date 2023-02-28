@@ -16,7 +16,7 @@ export default function Hero({ greeting, name, intro }) {
               <Link href="#!" class="btn" role="button">
                 Projects
               </Link>
-              <Link href="#!" class="btn bold" role="button">
+              <Link href="#!" class="btn btn-bold" role="button">
                 Resume
               </Link>
             </div>

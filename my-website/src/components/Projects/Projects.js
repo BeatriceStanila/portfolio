@@ -1,10 +1,9 @@
 import React from "react";
 import Link from "next/link";
-// import styles from "./projects.module.css";
 
 function Projects({ title, description, demo, repo, image }) {
   return (
-    <div class="project">
+    <div class="project" id="projects">
       <img class="project-image" src={image} />
       <div class="project-content">
         <h4 class="project-title">{title}</h4>

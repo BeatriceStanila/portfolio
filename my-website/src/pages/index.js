@@ -3,6 +3,7 @@ import { projectsData } from "../data/data";
 
 import Hero from "@/components/Hero/Hero";
 import Projects from "@/components/Projects/Projects";
+import About from "@/components/About/About";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
           name="Beatrice Stanila"
           intro="A software developer excited to  build technologies solutions to problems."
         />
-
+        <About />
         <div class="projects">
           <div>
             <h3>My projects</h3>

@@ -6,7 +6,7 @@
 .hero {
   display: flex;
   flex-flow: column nowrap;
-  background: url("/test.jpg") no-repeat 60% 120% / cover;
+  background: url("/portrait.jpg") no-repeat 60% 120% / cover;
   padding: 0 20px;
 }
 
@@ -15,8 +15,8 @@
   display: block;
   background: linear-gradient(
     0deg,
-    rgba(18, 18, 18, 1) 10%,
-    rgba(255, 255, 255, 0) 60%
+    rgba(18, 18, 18, 1) 2%,
+    rgba(255, 255, 255, 0) 40%
   );
   width: 100%;
   height: 100%;
@@ -50,7 +50,7 @@
 }
 
 .heroContent h1 {
-  font-size: 72px;
+  font-size: 75px;
   line-height: 1.1em;
   margin: 0 0 12.5px -5px;
 }
@@ -103,4 +103,12 @@
   color: #121212;
   background: #fff;
   box-shadow: inset 0 0 0 1px #ffffff40, 0 10px 30px -10px #ffffff80;
+}
+
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 45px;
+    line-height: 1.3em;
+    margin: 0 0 12.5px -5px;
+  }
 }

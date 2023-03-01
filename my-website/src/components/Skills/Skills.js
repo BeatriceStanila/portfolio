@@ -1,13 +1,24 @@
 import React from "react";
 import styles from "./skills.module.css";
+import { motion } from "framer-motion";
+import { fadeIn, staggerContainer } from "@/utils/motion";
 
 function Skills() {
   return (
     <div id="skills" className={styles.skills}>
       <div className={styles.wrapper}>
         <h1 className={styles.header}>My skills</h1>
-        <div className={styles.container}>
-          <div className={styles.frontend}>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className={styles.container}
+        >
+          <motion.div
+            variants={fadeIn("right", "spring", 0.5, 0.75)}
+            className={styles.frontend}
+          >
             <img src="/data.svg" className={styles.svg} />
             <ul className={styles.list}>
               <li>JavaScript</li>
@@ -16,8 +27,11 @@ function Skills() {
               <li>Firebase Auth</li>
               <li>TailwindCSS</li>
             </ul>
-          </div>
-          <div className="skills-backend">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("right", "spring", 0.75, 0.75)}
+            className="skills-backend"
+          >
             <img src="/programming.svg" className={styles.svg} />
             <ul className={styles.list}>
               <li>Node</li>
@@ -26,8 +40,11 @@ function Skills() {
               <li>PostgreSQL</li>
               <li>RESTful API</li>
             </ul>
-          </div>
-          <div className="skills-tools">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("right", "spring", 1, 0.75)}
+            className="skills-tools"
+          >
             <img src="/technology.svg" className={styles.svg} />
             <ul className={styles.list}>
               <li>VS Code</li>
@@ -36,8 +53,11 @@ function Skills() {
               <li>Jest & Supertest</li>
               <li>Figma</li>
             </ul>
-          </div>
-          <div className="skills-tolearn">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("right", "spring", 1.25, 0.75)}
+            className="skills-tolearn"
+          >
             <img src="/interests.svg" className={styles.svg} />
             <ul className={styles.list}>
               <li>AWS</li>
@@ -46,8 +66,8 @@ function Skills() {
               <li>Redux</li>
               <li>Codewars & Leetcode</li>
             </ul>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );

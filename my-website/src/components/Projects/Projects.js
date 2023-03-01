@@ -1,8 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./projects.module.css";
+import { motion } from "framer-motion";
+import { fadeIn, staggerContainer } from "@/utils/motion";
 
-function Projects({ title, description, demo, repo, image }) {
+function Projects({ title, description, demo, repo, image, index }) {
   return (
     <div className={styles.project} id="projects">
       <img className={styles.image} src={image} />

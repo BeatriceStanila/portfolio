@@ -1,8 +1,12 @@
+"use client";
 import Link from "next/link";
 import React from "react";
+("use client");
 import styles from "./navbar.module.css";
 import MobileMenu from "./MobileMenu/MobileMenu";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { slideIn } from "@/utils/motion";
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -18,8 +22,13 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className={styles.nav}>
-      <div className={styles.logo}>Beatrice Stanila</div>
+    <motion.nav
+      variants={slideIn("up", "tween", 0.75, 1)}
+      className={styles.nav}
+    >
+      <div className={styles.logo}>
+        <img src="/avatar.svg" alt="logo" />
+      </div>
       {isMobile ? (
         <MobileMenu />
       ) : (
@@ -40,7 +49,7 @@ function Navbar() {
           </ul>
         </div>
       )}
-    </nav>
+    </motion.nav>
   );
 }
 

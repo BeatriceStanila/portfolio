@@ -13,13 +13,11 @@
 .listContainer {
   list-style-type: none;
   padding: 0;
-  font-family: "Dancing Script", cursive;
 }
 
 .logo {
-  font-size: 18px;
-  line-height: 1.3em;
-  font-family: "Dancing Script", cursive;
+  width: 64px;
+  height: 64px;
 }
 
 .navMenu .listContainer {

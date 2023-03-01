@@ -26,7 +26,7 @@ export default function Home() {
           <div>
             <h3>My projects</h3>
             <div class="projects-wrapper">
-              {projectsData.map((data) => {
+              {projectsData.map((data, index) => {
                 return (
                   <Projects
                     title={data.project_name}
@@ -36,6 +36,7 @@ export default function Home() {
                     repo={data.repo_link}
                     image={data.image}
                     key={data.project_name}
+                    index={index}
                   />
                 );
               })}

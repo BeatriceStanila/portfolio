@@ -1,4 +1,3 @@
-/* THE NAVBAR ***/
 .nav {
   display: flex;
   flex-flow: row nowrap;
@@ -11,26 +10,26 @@
   z-index: 1;
 }
 
-ul {
+.listContainer {
   list-style-type: none;
   padding: 0;
   font-family: "Dancing Script", cursive;
 }
 
-.nav .logo {
+.logo {
   font-size: 18px;
   line-height: 1.3em;
   font-family: "Dancing Script", cursive;
 }
 
-.nav-menu ul {
+.navMenu .listContainer {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
   gap: 25px;
 }
 
-.nav-menu ul li a {
+.navMenu .listContainer li a {
   font-size: 16px;
   line-height: 1.5em;
   display: inline-block;
@@ -40,41 +39,59 @@ ul {
   transition: color, transform, 300ms;
 }
 
-.nav-menu ul li a:hover,
-.nav-menu ul li a:focus {
+.navMenu .listContainer li a:hover,
+.navMenu .listContainer li a:focus {
   color: #ffffff80;
   transform: translateY(-3px);
 }
 
-.mobile-icons {
+.mobileIcons {
   font-size: 28px;
   line-height: 1.3em;
 }
 
+.mobileNav {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #121212;
+  width: 360px;
+  padding: 0 10px;
+}
+
+.mobileNav .listContainer li a {
+  font-size: 20px;
+  line-height: 2.5em;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  transition: color, transform, 300ms;
+  margin: 5px 10px;
+}
+
+.mobileNav .listContainer li a:hover,
+.mobileNav .listContainer li a:focus {
+  color: #ffffff80;
+  transform: translateY(-3px);
+}
+
 /* NAVBAR MEDIA QUERY */
 @media screen and (max-width: 640px) {
-  .nav-menu {
+  .navMenu {
     display: none;
   }
 
-  .mobile-icons {
+  .mobileIcons {
     display: block;
   }
 
-  .nav-links {
+  .mobileLinks {
     display: flex;
     flex-flow: column wrap;
     align-self: center;
-    gap: 25px;
-  }
-}
-
-@media screen and (min-width: 640px) {
-  .mobile-icons {
-    display: none;
-  }
-
-  .nav-menu-mobile {
-    display: none;
+    gap: 45px;
+    color: white;
+    text-decoration: none;
   }
 }

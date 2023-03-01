@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import styles from "../navbar.module.css";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
@@ -13,18 +14,18 @@ function MobileMenu() {
 
   return (
     <nav>
-      <div className="mobile-icons" onClick={handleNavbar}>
+      <div className={styles.mobileIcons} onClick={handleNavbar}>
         {navbar ? (
-          <AiOutlineClose className="burger-close" />
+          <AiOutlineClose className={styles.burgerClose} />
         ) : (
-          <AiOutlineMenu className="burger-open" />
+          <AiOutlineMenu className={styles.burgerOpen} />
         )}
       </div>
-      <div className="mobile-nav">
+      <div className={styles.mobileNav}>
         {/* /*li elements are only rendered when navbar is true* */}
-        <ul className={`nav-links ${navbar ? "nav-active" : ""}`}>
+        <ul className={styles.listContainer}>
           {navbar && (
-            <>
+            <ul className={styles.mobileLinks}>
               <li>
                 <Link href="/#about">About</Link>
               </li>
@@ -37,7 +38,7 @@ function MobileMenu() {
               <li>
                 <Link href="/#contact">Contact</Link>
               </li>
-            </>
+            </ul>
           )}
         </ul>
       </div>

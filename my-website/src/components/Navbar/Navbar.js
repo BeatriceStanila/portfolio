@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-
+import styles from "./navbar.module.css";
 import MobileMenu from "./MobileMenu/MobileMenu";
 import { useState, useEffect } from "react";
 
@@ -18,13 +18,13 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="nav">
-      <div className="logo">Beatrice Stanila</div>
+    <nav className={styles.nav}>
+      <div className={styles.logo}>Beatrice Stanila</div>
       {isMobile ? (
         <MobileMenu />
       ) : (
-        <div className="nav-menu">
-          <ul>
+        <div className={styles.navMenu}>
+          <ul className={styles.listContainer}>
             <li>
               <Link href="/#about">About</Link>
             </li>

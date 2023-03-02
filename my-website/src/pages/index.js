@@ -22,10 +22,10 @@ export default function Home() {
           intro="A software developer excited to  build technologies solutions to problems."
         />
         <About />
-        <div class="projects">
+        <div className="projects">
           <div>
-            <h3>My projects</h3>
-            <div class="projects-wrapper">
+            <h3 className="projects-header">My projects</h3>
+            <div className="projects-wrapper">
               {projectsData.map((data, index) => {
                 return (
                   <Projects

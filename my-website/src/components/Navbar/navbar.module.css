@@ -18,8 +18,12 @@
 .logo {
   width: 64px;
   height: 64px;
+  transition: 300ms;
 }
 
+.logo:hover {
+  transform: scale(1.3);
+}
 .navMenu .listContainer {
   display: flex;
   flex-flow: row wrap;

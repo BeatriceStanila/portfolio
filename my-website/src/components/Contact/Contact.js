@@ -43,7 +43,7 @@ function Contact() {
                   className={styles.icons}
                 />
               </Link>
-              <Link href="https://www.linkedin.com/in/beatrice-stanila-82219b144/">
+              <Link href="https://github.com/BeatriceStanila">
                 <img
                   src="/githublue.png"
                   alt="github"

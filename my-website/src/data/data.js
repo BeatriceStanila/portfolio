@@ -22,7 +22,7 @@ export const projectsData = [
     stack_used: [
       "JavaScript | ",
       "React | ",
-      "Node | ",
+      "Node.js | ",
       "PostgreSQL | ",
       "Jest | ",
       "React Testing Library ",

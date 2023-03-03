@@ -33,6 +33,9 @@ function Contact() {
             <h4 className={styles.headingContent}>Feel Free to Connect</h4>
 
             <div className={styles.iconsContainer}>
+              <Link href="mailto: beatrice.stanila@gmail.com">
+                <img src="/gmail.png" alt="github" className={styles.icons} />
+              </Link>
               <Link href="https://www.linkedin.com/in/beatrice-stanila-82219b144/">
                 <img
                   src="/linkedin.png"
@@ -41,10 +44,11 @@ function Contact() {
                 />
               </Link>
               <Link href="https://www.linkedin.com/in/beatrice-stanila-82219b144/">
-                <img src="/github.png" alt="github" className={styles.icons} />
-              </Link>
-              <Link href="mailto: beatrice.stanila@gmail.com">
-                <img src="/gmail.png" alt="github" className={styles.icons} />
+                <img
+                  src="/githublue.png"
+                  alt="github"
+                  className={styles.icons}
+                />
               </Link>
             </div>
             <p className={styles.copyRights}>

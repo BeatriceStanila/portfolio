@@ -33,12 +33,13 @@
   font-size: 75px;
   margin-bottom: 25px;
   text-transform: capitalize;
+  letter-spacing: 5px;
 }
 
 .aboutContent h2 {
   font-size: 22px;
   margin-bottom: 25px;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   text-transform: capitalize;
 }
 
@@ -106,6 +107,7 @@
   .aboutContent h2 {
     font-size: 20px;
     margin-bottom: 20px;
+    letter-spacing: 1px;
   }
 
   .aboutContent p {

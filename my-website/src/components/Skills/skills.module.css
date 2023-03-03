@@ -10,6 +10,7 @@
   padding: 0 !important;
   margin-bottom: 40px;
   font-size: 75px;
+  letter-spacing: 5px;
   color: #fff;
   font-weight: 600;
   line-height: 60px;
@@ -32,19 +33,21 @@
 }
 
 .cardTitle {
-  font-weight: 600;
-  color: gainsboro;
-  letter-spacing: 1px;
+  font-weight: 700;
+  color: azure;
+  letter-spacing: 3px;
   line-height: 40px;
   font-size: 22px;
   padding-bottom: 8px;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 32px;
 }
 
 .description {
   font-weight: 600;
-  line-height: 32px;
+  line-height: 3.3em;
+  letter-spacing: 2px;
   color: #fff;
   font-size: 16px;
   max-width: 470px;

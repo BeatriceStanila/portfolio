@@ -50,6 +50,7 @@ li {
   line-height: 1.1em;
   margin: 0 0 90px 0;
   text-transform: capitalize;
+  letter-spacing: 5px;
 }
 
 .projects .projects-wrapper {

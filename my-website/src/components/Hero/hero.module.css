@@ -53,6 +53,7 @@
   font-size: 75px;
   line-height: 1.1em;
   margin: 0 0 12.5px -5px;
+  letter-spacing: 5px;
 }
 
 .heroContent h2 {
@@ -60,6 +61,7 @@
   line-height: 2em;
   font-weight: 400;
   margin: 0 0 25px 0;
+  letter-spacing: 1px;
 }
 
 .heroButtons {
@@ -76,6 +78,7 @@
   padding: 13px 39px;
   border-radius: 3px;
   transition: 300ms;
+  letter-spacing: 2px;
 }
 
 .btn:hover,
@@ -96,6 +99,7 @@
   border-radius: 3px;
   transition: 300ms;
   background-color: #ffffff80;
+  letter-spacing: 2px;
 }
 
 .btnBold:hover,
@@ -106,9 +110,17 @@
 }
 
 @media (max-width: 768px) {
+  .heroContent p {
+    padding-top: 60px;
+  }
   .heroContent h1 {
     font-size: 45px;
-    line-height: 1.3em;
+    line-height: 2em;
     margin: 0 0 12.5px -5px;
+    letter-spacing: 1px;
+  }
+
+  .heroContent h2 {
+    padding-bottom: 20px;
   }
 }

@@ -23,12 +23,16 @@
 .title {
   font-size: 24px;
   line-height: 1.3em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .description {
   font-size: 16px;
   line-height: 1.5em;
   text-align: justify;
+  letter-spacing: 1px;
+  padding-top: 10px;
 }
 
 .icons {
@@ -38,8 +42,8 @@
 }
 
 .icons svg {
-  width: 24px;
-  height: 24px;
+  width: 34px;
+  height: 34px;
   fill: #fff;
   transition: 300ms;
 }
@@ -52,5 +56,13 @@
 @media (max-width: 767px) {
   .project {
     flex: 0 0 90%;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.5em;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    padding-top: 10px;
   }
 }

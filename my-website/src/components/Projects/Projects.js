@@ -4,13 +4,14 @@ import styles from "./projects.module.css";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 
-function Projects({ title, description, demo, repo, image, index }) {
+function Projects({ title, description, demo, repo, image, stack }) {
   return (
     <div className={styles.project} id="projects">
       <img className={styles.image} src={image} />
       <div className={styles.content}>
         <h4 className={styles.title}>{title}</h4>
         <p className={styles.description}>{description}</p>
+        <p className={styles.description}>{stack}</p>
         <div className={styles.icons}>
           <Link href={repo}>
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

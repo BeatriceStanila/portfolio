@@ -2,11 +2,14 @@ import React from "react";
 import Link from "next/link";
 import styles from "./projects.module.css";
 import { motion } from "framer-motion";
-import { fadeIn, staggerContainer } from "@/utils/motion";
+import { fadeIn } from "@/utils/motion";
 
 function Projects({ title, description, demo, repo, image, stack }) {
   return (
-    <div className={styles.project} id="projects">
+    <motion.div
+      className={styles.project}
+      variants={fadeIn("down", "tween", 0.2, 1)}
+    >
       <img className={styles.image} src={image} />
       <div className={styles.content}>
         <h4 className={styles.title}>{title}</h4>
@@ -28,7 +31,7 @@ function Projects({ title, description, demo, repo, image, stack }) {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 export default Projects;

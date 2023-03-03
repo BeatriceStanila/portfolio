@@ -3,9 +3,10 @@ import { projectsData } from "../data/data";
 import Hero from "@/components/Hero/Hero";
 import Projects from "@/components/Projects/Projects";
 import About from "@/components/About/About";
-
 import Contact from "@/components/Contact/Contact";
 import Skills from "@/components/Skills/Skills";
+import { motion } from "framer-motion";
+import { staggerContainer } from "@/utils/motion";
 
 export default function Home() {
   return (
@@ -23,10 +24,16 @@ export default function Home() {
           intro="A software developer excited to  build technologies solutions to problems."
         />
         <About />
-        <div className="projects">
+        <div className="projects" id="projects">
           <div>
             <h3 className="projects-header">My projects</h3>
-            <div className="projects-wrapper">
+            <motion.div
+              className="projects-wrapper"
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.25 }}
+            >
               {projectsData.map((data, index) => {
                 return (
                   <Projects
@@ -41,7 +48,7 @@ export default function Home() {
                   />
                 );
               })}
-            </div>
+            </motion.div>
           </div>
         </div>
 

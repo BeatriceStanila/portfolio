@@ -23,14 +23,18 @@ function About() {
           <h2>Junior Software Developer</h2>
 
           <p>
-            After attending a <span className={styles.span}>Brum.js</span>{" "}
-            meetup, I discovered a deep passion for the field of software
-            development, leading me to transition from my former career as a
-            pharmacist to pursue this new path.
+            Hi! I'm Beatrice, but you can call me{" "}
+            <span className={styles.span}>Bea</span>. After attending a{" "}
+            <span className={styles.span}>Brum.js</span> meetup, I discovered a
+            deep passion for the field of software development, leading me to
+            transition from my former career as a pharmacist to pursue this new
+            path.
             <br />
             Fast forward to today, and I’ve just completed the{" "}
-            <span className={styles.span}>School of Code Bootcamp</span> and I
-            couldn’t be more excited about the future! I’m eager to keep
+            <Link href="https://www.schoolofcode.co.uk/" className={styles.soc}>
+              School of Code Bootcamp
+            </Link>{" "}
+            and I couldn’t be more excited about the future! I’m eager to keep
             learning and growing as a software developer, and I’m thrilled to
             put my newly acquired skills and knowledge to use.
             <br />

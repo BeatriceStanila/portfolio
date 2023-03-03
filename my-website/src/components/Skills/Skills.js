@@ -5,7 +5,7 @@ import { fadeIn, staggerContainer } from "@/utils/motion";
 
 function Skills() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="skills">
       <h1 className={styles.title}>My Skills</h1>
 
       <motion.div

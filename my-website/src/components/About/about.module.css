@@ -74,7 +74,12 @@
 }
 
 .span {
-  color: #f7c8e0;
+  color: #823094;
+}
+
+.soc {
+  text-decoration: none;
+  color: #823094;
 }
 
 @media (max-width: 820px) {

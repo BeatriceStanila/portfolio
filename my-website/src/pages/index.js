@@ -3,8 +3,9 @@ import { projectsData } from "../data/data";
 import Hero from "@/components/Hero/Hero";
 import Projects from "@/components/Projects/Projects";
 import About from "@/components/About/About";
-import Skills from "@/components/Skills/Skills";
+
 import Contact from "@/components/Contact/Contact";
+import Skills from "@/components/Skills/Skills";
 
 export default function Home() {
   return (

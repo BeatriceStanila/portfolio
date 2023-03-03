@@ -30,7 +30,7 @@ function Contact() {
           <div className={styles.horizontalLine} />
 
           <div className={styles.container}>
-            <h4 className={styles.headingContent}>Feel Free to Connect</h4>
+            <h4 className={styles.headingContent}>Let's Connect</h4>
 
             <div className={styles.iconsContainer}>
               <Link href="mailto: beatrice.stanila@gmail.com">

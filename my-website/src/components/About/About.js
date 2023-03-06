@@ -44,8 +44,12 @@ function About() {
             make my mark on the tech industry.
           </p>
 
-          <Link href="mailto:beatrice.stanila@gmail.com">
-            <button className={styles.btn}>Let's Talk</button>
+          <Link
+            href="mailto:beatrice.stanila@gmail.com"
+            className={styles.btn}
+            role="button"
+          >
+            Let's Talk
           </Link>
         </motion.div>
       </motion.div>

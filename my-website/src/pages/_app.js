@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
           exist={{ opacity: 0, y: 15 }}
           transition={{ delay: 0.25 }}
         >
-          <Component {...pageProps} />;
+          <Component {...pageProps} />
         </motion.div>
       </AnimatePresence>
     </>

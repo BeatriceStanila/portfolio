@@ -4,9 +4,8 @@ import styles from "./hero.module.css";
 import Navbar from "../Navbar/Navbar";
 import { motion } from "framer-motion";
 import {
-  slideIn,
-  staggerContainer,
   textContainer,
+  staggerContainer,
   textVariant,
   textVariant2,
 } from "@/utils/motion";
@@ -20,10 +19,10 @@ export default function Hero({ greeting, name, intro }) {
           <motion.div
             variants={staggerContainer}
             initial="hidden"
-            whileInView="show"
+            animate="show"
             viewport={{ once: false, amount: 0.25 }}
           >
-            <motion.p variants={textVariant(0.5)}>{greeting}</motion.p>
+            <motion.p variants={textVariant(1.2)}>{greeting}</motion.p>
             <motion.h1 variants={textContainer}>
               {Array.from(name).map((letter, index) => (
                 <motion.span variants={textVariant2} key={index}>

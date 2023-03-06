@@ -5,14 +5,15 @@
 
 .avatar {
   height: auto;
-  width: 490px;
+  width: 380px;
+  color: red;
   margin-bottom: 50px;
-  transform: scale(1, 1);
+  transform: scale(0.75, 0.75);
   transition: transform 0.5s ease;
 }
 
 .avatar:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1, 1);
 }
 
 .aboutContent {

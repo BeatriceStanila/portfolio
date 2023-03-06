@@ -8,7 +8,7 @@ function Projects({ title, description, demo, repo, image, stack }) {
   return (
     <motion.div
       className={styles.project}
-      variants={fadeIn("down", "tween", 0.2, 1)}
+      variants={fadeIn("up", "tween", 0.2, 1)}
     >
       <img className={styles.image} src={image} />
       <div className={styles.content}>

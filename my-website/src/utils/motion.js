@@ -1,19 +1,17 @@
-export const slideIn = (direction, type, delay, duration) => ({
+export const navbar = {
   hidden: {
-    x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
-    y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
+    opacity: 0,
+    y: 100,
   },
-  show: {
-    x: 0,
+  visible: {
+    opacity: 1,
     y: 0,
     transition: {
-      type,
-      delay,
-      duration,
-      ease: "easeOut",
+      type: "tween",
+      delay: 0.5,
     },
   },
-});
+};
 
 export const staggerContainer = (staggerChildren, delayChildren) => ({
   hidden: {},
@@ -69,7 +67,7 @@ export const textVariant2 = {
 export const fadeIn = (direction, type, delay, duration) => ({
   hidden: {
     x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
-    y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
+    y: direction === "up" ? -100 : direction === "down" ? -100 : 0,
     opacity: 0,
   },
   show: {
@@ -80,7 +78,7 @@ export const fadeIn = (direction, type, delay, duration) => ({
       type,
       delay,
       duration,
-      ease: "easeOut",
+      ease: "easeIn",
     },
   },
 });

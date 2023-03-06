@@ -33,7 +33,7 @@ export default function Hero({ greeting, name, intro }) {
             </motion.h1>
             <motion.h2 variants={textVariant(1.2)}>{intro}</motion.h2>
             <motion.div
-              variants={slideIn("left", "tween", 1.4, 1)}
+              variants={textVariant(1.4)}
               className={styles.heroButtons}
             >
               <Link href="/#projects" class={styles.btn} role="button">

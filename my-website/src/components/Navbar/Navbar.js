@@ -6,7 +6,7 @@ import styles from "./navbar.module.css";
 import MobileMenu from "./MobileMenu/MobileMenu";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { slideIn, navbar } from "@/utils/motion";
+import { navbar } from "@/utils/motion";
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);

@@ -1,22 +1,3 @@
-export const slideIn = (direction, type, delay, duration) => ({
-  hidden: {
-    opacity: 0,
-    x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
-    y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
-  },
-  show: {
-    opacity: 1,
-    x: 0,
-    y: 0,
-    transition: {
-      type,
-      delay,
-      duration,
-      ease: "easeOut",
-    },
-  },
-});
-
 export const navbar = {
   hidden: {
     opacity: 0,
@@ -86,7 +67,7 @@ export const textVariant2 = {
 export const fadeIn = (direction, type, delay, duration) => ({
   hidden: {
     x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
-    y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
+    y: direction === "up" ? -100 : direction === "down" ? -100 : 0,
     opacity: 0,
   },
   show: {
@@ -97,7 +78,7 @@ export const fadeIn = (direction, type, delay, duration) => ({
       type,
       delay,
       duration,
-      ease: "easeOut",
+      ease: "easeIn",
     },
   },
 });

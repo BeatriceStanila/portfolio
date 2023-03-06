@@ -16,7 +16,7 @@ function Skills() {
         viewport={{ once: false, amount: 0.25 }}
       >
         <motion.div
-          variants={fadeIn("right", "spring", 0.5, 0.75)}
+          variants={fadeIn("down", "tween", 0.2, 1)}
           className={styles.card}
         >
           <div className={styles.containerCard}>
@@ -30,7 +30,7 @@ function Skills() {
         </motion.div>
 
         <motion.div
-          variants={fadeIn("right", "spring", 0.75, 0.75)}
+          variants={fadeIn("down", "tween", 0.2, 1)}
           className={styles.card}
         >
           <div className={styles.containerCard}>
@@ -45,7 +45,7 @@ function Skills() {
         </motion.div>
 
         <motion.div
-          variants={fadeIn("right", "spring", 1, 0.75)}
+          variants={fadeIn("down", "tween", 0.2, 1)}
           className={styles.card}
         >
           <div className={styles.containerCard}>
@@ -59,7 +59,7 @@ function Skills() {
         </motion.div>
 
         <motion.div
-          variants={fadeIn("right", "spring", 1.25, 0.75)}
+          variants={fadeIn("down", "tween", 0.2, 1)}
           className={styles.card}
         >
           <div className={styles.containerCard}>

@@ -16,13 +16,14 @@
 }
 
 .logo {
-  width: 64px;
-  height: 64px;
+  width: 34px;
+  height: 34px;
   transition: 300ms;
+  padding: 5px;
 }
 
 .logo:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 .navMenu .listContainer {
   display: flex;

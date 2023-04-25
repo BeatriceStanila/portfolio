@@ -39,7 +39,7 @@ export default function Hero({ greeting, name, intro }) {
                 Projects
               </Link>
               <Link
-                href="./BeatriceStanilaResume.pdf"
+                href="./BeatriceOanaStanilaResume.pdf"
                 class={styles.btnBold}
                 role="button"
               >

@@ -30,7 +30,7 @@ function About() {
             transition from my former career as a pharmacist to pursue this new
             path.
             <br />
-            Fast forward to today, I’ve just completed the{" "}
+            Fast forward to today, I completed the{" "}
             <Link href="https://www.schoolofcode.co.uk/" className={styles.soc}>
               School of Code Bootcamp
             </Link>{" "}

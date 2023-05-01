@@ -1,5 +1,6 @@
 "use client";
-import Link from "next/link";
+
+import { Link } from "react-scroll";
 import React from "react";
 ("use client");
 import styles from "./navbar.module.css";
@@ -37,16 +38,52 @@ function Navbar() {
         <div className={styles.navMenu}>
           <ul className={styles.listContainer}>
             <li>
-              <Link href="/#about">About</Link>
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                About
+              </Link>
             </li>
             <li>
-              <Link href="/#skills">Skills</Link>
+              <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                Projects
+              </Link>
             </li>
             <li>
-              <Link href="/#projects">Projects</Link>
+              <Link
+                activeClass="active"
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                Skills
+              </Link>
             </li>
             <li>
-              <Link href="/#contact">Contact</Link>
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </div>

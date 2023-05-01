@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import styles from "./hero.module.css";
 import Navbar from "../Navbar/Navbar";
 import { motion } from "framer-motion";
@@ -35,7 +35,16 @@ export default function Hero({ greeting, name, intro }) {
               variants={textVariant(1.4)}
               className={styles.heroButtons}
             >
-              <Link href="/#projects" class={styles.btn} role="button">
+              <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                class={styles.btn}
+                role="button"
+              >
                 Projects
               </Link>
               <Link

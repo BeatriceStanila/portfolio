@@ -6,6 +6,7 @@
 .hero {
   display: flex;
   flex-flow: column nowrap;
+
   background: url("/portrait.jpg") no-repeat 60% 120% / cover;
   padding: 0 20px;
 }

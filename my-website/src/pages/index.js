@@ -5,8 +5,6 @@ import Projects from "@/components/Projects/Projects";
 import About from "@/components/About/About";
 import Contact from "@/components/Contact/Contact";
 import Skills from "@/components/Skills/Skills";
-import { motion } from "framer-motion";
-import { staggerContainer } from "@/utils/motion";
 
 export default function Home() {
   return (
@@ -27,18 +25,13 @@ export default function Home() {
         <div className="projects" id="projects">
           <div>
             <h3 className="projects-header">My projects</h3>
-            <motion.div
-              className="projects-wrapper"
-              variants={staggerContainer}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.25 }}
-            >
+            <div className="projects-wrapper">
               {projectsData.map((data, index) => {
                 return (
                   <Projects
                     title={data.project_name}
                     description={data.project_description}
+                    my_contribution={data.my_contribution}
                     stack={data.stack_used}
                     demo={data.demo_link}
                     repo={data.repo_link}
@@ -48,7 +41,7 @@ export default function Home() {
                   />
                 );
               })}
-            </motion.div>
+            </div>
           </div>
         </div>
 

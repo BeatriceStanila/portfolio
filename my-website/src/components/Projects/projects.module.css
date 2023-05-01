@@ -6,10 +6,12 @@
   transition: 300ms;
   border-radius: 5px;
   overflow: hidden;
+  transition: 300ms;
 }
 
 .project:hover {
   background: #ffffff1a;
+  transform: scale(1.05);
 }
 
 .content {
@@ -17,6 +19,7 @@
   flex-flow: column nowrap;
   gap: 12.5px;
   padding: 25px;
+  min-height: 520px;
 }
 
 .title {
@@ -26,12 +29,17 @@
   text-transform: uppercase;
 }
 
+.image {
+  height: 350px;
+}
+
 .description {
   font-size: 16px;
   line-height: 1.5em;
   text-align: justify;
   letter-spacing: 1px;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .icons {

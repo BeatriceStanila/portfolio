@@ -71,7 +71,7 @@
   text-decoration: none;
   color: white;
   transition: color, transform, 300ms;
-  margin: 5px 10px;
+  margin: 20px 10px;
 }
 
 .mobileNav .listContainer li a:hover,

@@ -1,5 +1,5 @@
 .container {
-  width: 1300px !important;
+  width: 100%;
   padding: 0 !important;
   margin-right: auto;
   margin-left: auto;
@@ -30,11 +30,13 @@
   background-clip: padding-box;
   border-radius: 10px;
   padding: 20px;
+  transition: 300ms;
 }
 
 .containerCard:hover {
   background: #ffffff1a;
-  background: linear-gradient(65deg, #5c59591a, #ffffff0d, #3b3a3c);
+  background: linear-gradient(65deg, #5c59591a, #d2a3a30d, #3b3a3c);
+  transform: scale(1.01);
 }
 
 .cardTitle {

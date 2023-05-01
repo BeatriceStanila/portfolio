@@ -57,6 +57,7 @@ li {
   display: flex;
   flex-flow: row wrap;
   gap: 50px;
+  align-items: baseline;
 }
 
 @media (max-width: 768px) {
